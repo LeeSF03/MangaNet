@@ -1,34 +1,44 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "MangaListData.json");
-xhr.onload = function () {
-    var MangaList = JSON.parse(this.response);
-    console.log(MangaList);
+var xhr = new XMLHttpRequest()
 
-    let PageTitle = JSON.stringify(document.getElementById("PageTitle").innerHTML);
-    console.log(PageTitle);
+xhr.open("GET", "../assets/json/MangaListData.json")
+
+xhr.onload = function () {
+    lazyToThinkAName()
+
+    var lis = document.querySelectorAll('li .navLink')
+    lis.forEach((el, i) => {
+      el.addEventListener('click', () => {
+        document.getElementById("PageTitle").innerText = el.innerText
+        lazyToThinkAName()
+    })
+    })    
+};
+
+
+function lazyToThinkAName() {
+    var MangaList = JSON.parse(xhr.response)
+    
+    let PageTitle = document.getElementById("PageTitle").innerText
+
     var list = "<ul>";
     if (PageTitle != "All") {
+        console.log("not")
         for(let manga of MangaList) {
-            let MangaGenre = JSON.stringify(manga.genre);
+            let MangaGenre = manga.genre
             if (MangaGenre == PageTitle) {
-                list += `<div><li><img src=${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`;
-                console.log(manga.title)
+                list += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`
+                
             } 
         }
     } else if (PageTitle == "All") {
+        console.log("is")
         for(let manga of MangaList) {
-            list += `<div><li><img src=${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`;
-            console.log(manga.title)
+            list += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`
         }    
     }
     
-    list += "</ul>";
-    document.getElementById("MangaListDoc").innerHTML = list;
+    list += "</ul>"
+    document.getElementById("MangaListDoc").innerHTML = list
+}
 
-    // var link = document.createElement("link");
-    // link.rel = "stylesheet";
-    // link.type = "type/css";
-    // link.href = ".css";
-    // document.head.append(link);
-};
-xhr.send(); 
+xhr.send()
