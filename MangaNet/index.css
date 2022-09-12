@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.first-navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.first-navbar nav{
+    display: inline-block;
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.first-navbar nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.first-navbar nav ul li{
+    display: inline-block;
+}
+
+.second-navbar nav{
+    flex: 1;
+    text-align: center;
+}
+
+.second-navbar nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.second-navbar nav ul div {
+    display: inline-block;
+}
+
+.second-navbar nav ul li a {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;   
+}
+
+.second-navbar nav ul li a:hover {
+    background-color: rgb(242, 234, 234);
+}
+
+.selected {
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#PageTitle {
+    text-align: center;
+}
+
+#MangaListDoc ul {
+    align-items: center;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#MangaListDoc ul div {
+    display: inline-block;
+    align-items: center;
+    vertical-align: top;
+    border-style: solid;
+    margin: 5px;
+    padding: 30px;
+    width: 240px;
+    height: 400px;
+}
+
+#MangaListDoc ul div li {
+    display: inline-block;
+    align-items: center;
+}
+
+#MangaListDoc ul div li img {
+    width: 230px;
+}
