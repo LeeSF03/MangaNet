@@ -3,6 +3,7 @@ var xhr = new XMLHttpRequest()
 xhr.open("GET", "../assets/json/MangaListData.json")
 
 xhr.onload = function () {
+    // ignore this unoptimized sh*t
     lazyToThinkAName()
 
     var lis = document.querySelectorAll('li .navLink')
