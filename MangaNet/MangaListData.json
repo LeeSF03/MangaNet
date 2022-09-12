@@ -1,9 +1,0 @@
-[
-{"img" : "src/one-piece-vol-1.jpg", "title" : "One Piece Vol 1", "genre" : "Shounen", "price" : "RM 45.00"}, 
-{"img" : "src/my-little-monster-11.jpg", "title" : "My Little Monster Vol 1", "genre" : "Shoujo", "price" : "RM 55.00"}, 
-{"img" : "src/berserk-volume-1.jpg", "title" : "Berserk Vol 1", "genre" : "Seinen", "price" : "RM 65.00"},
-{"img" : "src/wotakoi-love-is-hard-for-otaku-1.jpg", "title" : "Wotakoi: Love Is Hard For Otaku Vol 1", "genre" : "Josei", "price" : "RM 75.00"},
-{"img" : "src/black-clover-vol-1.jpg", "title" : "Black Clover Vol 1", "genre" : "Shounen", "price" : "RM 45.00"},
-{"img" : "src/vagabond-vol-1-vizbig-edition.jpg", "title" : "Vagabond VizBig Edition Vol 1", "genre" : "Seinen", "price" : "RM 95.00"},
-{"img" : "src/maid-sama-2-in-1-edition-vol-1.jpg", "title" : "Maid-sama 2-in-1 Edition Vol 1", "genre" : "Shoujo", "price" : "RM 70.00"}
-]
