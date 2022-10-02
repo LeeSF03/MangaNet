@@ -1,45 +1,43 @@
 var xhr = new XMLHttpRequest()
-
 xhr.open("GET", "../assets/json/MangaListData.json")
 
 xhr.onload = function () {
-    // ignore this unoptimized sh*t
-    lazyToThinkAName()
-
-    var lis = document.querySelectorAll('li .navLink')
-    lis.forEach((el, i) => {
-      el.addEventListener('click', () => {
-        document.getElementById("PageTitle").innerText = el.innerText
-        lazyToThinkAName()
-    })
+    categoryFunction()
+    var navList = document.querySelectorAll('.navLink')
+    navList.forEach((el) => {
+        el.addEventListener('click', () => {categoryFunction(el)})
     })    
-};
+}
 
-
-function lazyToThinkAName() {
+function categoryFunction(el) {
     var MangaList = JSON.parse(xhr.response)
-    
-    let PageTitle = document.getElementById("PageTitle").innerText
 
-    var list = "<ul>";
-    if (PageTitle != "All") {
+    if(el) {
+        document.getElementById("PageTitle").innerText = el.innerText
+    }
+
+    console.log(document.getElementById("PageTitle").innerText.toLocaleLowerCase())
+
+    let PageTitle = document.getElementById("PageTitle").innerText.toLocaleLowerCase()
+
+    var mangaLibrary = "<ul>"
+    if (PageTitle != "all") {
         console.log("not")
         for(let manga of MangaList) {
             let MangaGenre = manga.genre
             if (MangaGenre == PageTitle) {
-                list += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`
-                
+                mangaLibrary += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> RM ${parseFloat(manga.price).toFixed(2)}</li></div>`
             } 
         }
-    } else if (PageTitle == "All") {
+    } else if (PageTitle == "all") {
         console.log("is")
         for(let manga of MangaList) {
-            list += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> ${manga.price}</li></div>`
+            mangaLibrary += `<div><li><img src=../assets/images/${manga.img}> <br> ${manga.title} <br> RM ${parseFloat(manga.price).toFixed(2)}</li></div>`
         }    
     }
     
-    list += "</ul>"
-    document.getElementById("MangaListDoc").innerHTML = list
+    mangaLibrary += "</ul>"
+    document.getElementById("MangaListDoc").innerHTML = mangaLibrary
 }
 
 xhr.send()

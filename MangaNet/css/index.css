@@ -73,7 +73,6 @@ a {
 
 #MangaListDoc ul {
     align-items: center;
-    display: inline-block;
     list-style-type: none;
 }
 
@@ -89,7 +88,6 @@ a {
 }
 
 #MangaListDoc ul div li {
-    display: inline-block;
     align-items: center;
 }
 
