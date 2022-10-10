@@ -10,6 +10,8 @@ xhr.onload = function () {
     })    
 }
 
+let mangaArray = []
+
 function categoryFunction(clickedGenreTitle) {
     var MangaList = JSON.parse(xhr.response)
 
@@ -22,8 +24,8 @@ function categoryFunction(clickedGenreTitle) {
     var mangaLibrary = `<ul>`
 
     if (PageTitle != "all") {
-        console.log("not")
-        let mangaArray = []
+        console.log("not all")
+        mangaArray.length = 0
 
         for(let manga of MangaList) {
             let MangaGenre = manga.genre
@@ -41,14 +43,10 @@ function categoryFunction(clickedGenreTitle) {
                 mangaLibrary += `</li></div>`
             } 
         }
-        mangaLibrary += `</ul>`
-        document.getElementById("MangaListDoc").innerHTML = mangaLibrary
-        console.log(mangaArray)
-        addButtonListener(mangaArray)
 
     } else if (PageTitle == "all") {
-        console.log("is")
-        let mangaArray = []
+        console.log("is all")
+        mangaArray.length = 0
 
         for(let manga of MangaList) {   
             mangaArray.push(manga)         
@@ -63,12 +61,11 @@ function categoryFunction(clickedGenreTitle) {
             }
             mangaLibrary += `</li></div>`
         }
-        mangaLibrary += `</ul>`
-        document.getElementById("MangaListDoc").innerHTML = mangaLibrary
-        console.log(mangaArray)
-        addButtonListener(mangaArray)
-
     }
+    mangaLibrary += `</ul>`
+    document.getElementById("MangaListDoc").innerHTML = mangaLibrary
+    console.log(mangaArray)
+    addButtonListener(mangaArray)
 }
 
 updateCartNumber();
