@@ -1,13 +1,13 @@
 body{
     margin: 0px;
     padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    padding-left: 5%;
-    padding-right: 5%;
     align-items: center;
 }
 
@@ -67,7 +67,7 @@ a {
     border-left: none;
 }
 
-#PageTitle {
+#PageTitle, #cartTitle {
     text-align: center;
 }
 
@@ -82,15 +82,32 @@ a {
     vertical-align: top;
     border-style: solid;
     margin: 5px;
-    padding: 30px;
-    width: 240px;
-    height: 400px;
+    margin-bottom: 20px;
 }
 
 #MangaListDoc ul div li {
     align-items: center;
+    width: 240px;
+    height: 440px;
+    padding: 30px 35px;
 }
 
 #MangaListDoc ul div li img {
     width: 230px;
+}
+
+.addToCartButton {
+    background-color: transparent;
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+}
+
+.addToCartButton:hover {
+    background-color: #F2EAEA;
+}
+
+#cartQuantityNumber {
+    font-size: large;
+    margin-left: 5px;
 }

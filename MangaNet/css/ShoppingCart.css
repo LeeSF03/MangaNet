@@ -1,0 +1,88 @@
+@import url("index.css");
+
+#cartQuantityNumber {
+    font-size: large;
+}
+
+#productList {
+    list-style-type: none;
+}
+
+.productRow li div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#productList {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+} 
+
+#productList div img {
+    width: 100px
+}
+
+.productContainer {
+    padding: 0% 5%;
+}
+
+.productHeader {
+    display: flex;
+    justify-content: flex-start;
+    /* border-bottom: 4px solid; */
+}
+
+.productsTitle, .product {
+    width: 52%;
+}
+
+.productsPrice, .price {
+    width: 16%;
+}
+
+.productsQuantity, .quantity {
+    width: 16%;
+}
+
+.productDesrciption {
+    width: 100%;
+}
+
+.product span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.productRow {
+    display: flex;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 10px 0px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.removeButton {
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.removeButton:hover {
+    background-color: #F2EAEA;
+}
+
+.quantityButton {
+    background-color: transparent;
+    border-style: none;
+    font-size: large;
+    margin: 5%;
+}
+
+.quantityButton:hover {
+    background-color: #F2EAEA;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaNet</title>
+    <link rel="icon" href="../assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/ShoppingCart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="../js/ShoppingCart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first-navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../assets/images/Logo.png" width="70px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <a href="ShoppingCart.html"><img id="cart" src="../assets/images/cart.png" width="30px"></a>
+            <span id="cartQuantityNumber">0</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1 id="cartTitle">Shopping Cart</h1>
+
+    <div class="productContainer">
+        <div class="productHeader">
+            <h5 class="productsTitle">PRODUCT</h5>
+            <h5 class="productsPrice">PRICE</h5>
+            <h5 class="productsQuantity">QUANTITY</h5>
+            <h5 class="prooductsTotal">TOTAL</h5>
+        </div>
+
+        <div class="products">
+            <ul id="productList">
+                <div class="productRow">
+                    <li class="productDesrciption">
+                        <div class="product">
+                            <button class="removeButton">X</button>
+                            <span><img src="../assets/images/my-little-monster-11.jpg" alt="My Little Monster Vol 1"></span>
+                            <span>My Little Monster Vol 1</span>
+                        </div>
+                        <div class="price">
+                            <span>RM 55.00</span>
+                        </div>
+                        <div class="quantity">
+                            <button class="quantityButton">-</button>
+                            <span>1</span>
+                            <button class="quantityButton">+</button>
+                        </div>
+                        <div class="total">
+                            <span>RM55.00</span>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
