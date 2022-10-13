@@ -71,12 +71,12 @@ a {
     text-align: center;
 }
 
-#MangaListDoc ul {
+#MangaListDoc {
     align-items: center;
     list-style-type: none;
 }
 
-#MangaListDoc ul div {
+#MangaListDoc div {
     display: inline-block;
     align-items: center;
     vertical-align: top;
@@ -85,14 +85,14 @@ a {
     margin-bottom: 20px;
 }
 
-#MangaListDoc ul div li {
+#MangaListDoc div li {
     align-items: center;
     width: 240px;
     height: 440px;
     padding: 30px 35px;
 }
 
-#MangaListDoc ul div li img {
+#MangaListDoc div li img {
     width: 230px;
 }
 
