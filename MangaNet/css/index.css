@@ -16,6 +16,10 @@ a {
     color: #555;
 }
 
+#account {
+    pointer-events: none;
+}
+
 .first-navbar {
     display: flex;
     align-items: center;
