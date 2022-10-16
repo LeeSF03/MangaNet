@@ -9,3 +9,6 @@ cartItemQuantity.getItemsFromLocalStorage();
 cartItemQuantity.getSubTotal();
 
 cartButtons.addRemoveButtonsListener();
+cartButtons.addIncreaseButtonsListener();
+cartButtons.addDecreaseButtonsListener();
+cartButtons.addCheckoutListener();

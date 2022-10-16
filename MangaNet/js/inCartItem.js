@@ -10,9 +10,9 @@ class inCartItem {
         }
 
         //try to seperate this into two different function for ordersummary total items and cart number
-        console.log(mangasQuantity);
+        console.log('Total item is ' + mangasQuantity);
         document.getElementById('cartQuantityNumber').innerHTML = mangasQuantity;
-        let totalItemsInOrderSum = document.getElementById('totalItemsCount')
+        let totalItemsInOrderSum = document.getElementById('totalItemsCount');
         if(totalItemsInOrderSum) {
             totalItemsInOrderSum.innerHTML = mangasQuantity;
         }
