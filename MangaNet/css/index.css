@@ -3,6 +3,7 @@ body{
     padding: 0px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 20px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -86,7 +87,6 @@ a {
     vertical-align: top;
     border-style: solid;
     margin: 5px;
-    margin-bottom: 20px;
 }
 
 #MangaListDoc div li {
