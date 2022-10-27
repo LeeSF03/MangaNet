@@ -1,0 +1,19 @@
+@import url('signup.css');
+
+#loginTitle {
+    font-size: xx-large;
+}
+
+#loginButton {
+    margin: 5%;
+    width: 30%;
+    height: 30px;
+    font-size: medium;
+    background-color: transparent;
+}
+
+#loginButton:hover {
+    background-color: #000;
+    -webkit-text-fill-color: white;
+    cursor: pointer;
+}

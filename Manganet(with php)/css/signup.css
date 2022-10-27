@@ -1,0 +1,47 @@
+@import url("index.css");
+
+main {
+    align-items: center;
+}
+
+#signupWrapper section{
+    text-align: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#signupTitle {
+    font-size: xx-large;
+}
+
+#signupForm {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+input[type='text'], input[type='password']{
+    align-items: center;
+    display: inline-block;
+    margin: 5%;
+    width: 100%;
+    height: 30px;
+    border-color: #0000;
+    border: 3px solid;
+    font-size: medium;
+}
+
+#signupButton {
+    margin: 5%;
+    width: 30%;
+    height: 30px;
+    font-size: medium;
+    background-color: transparent;
+}
+
+#signupButton:hover {
+    background-color: #000;
+    -webkit-text-fill-color: white;
+    cursor: pointer;
+}

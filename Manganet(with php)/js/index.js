@@ -23,6 +23,7 @@ xhr.onload = function () {
 function getPageTitle(clickedGenreTitle) {
     if(clickedGenreTitle) {
         document.getElementById("PageTitle").innerText = clickedGenreTitle.innerText;
+        console.log(clickedGenreTitle.innerText);
     }
     PageTitle = document.getElementById("PageTitle").innerText.toLocaleLowerCase();
     return PageTitle;

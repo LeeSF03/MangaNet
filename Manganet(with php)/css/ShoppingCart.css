@@ -1,0 +1,161 @@
+@import url("index.css");
+
+#cartQuantityNumber {
+    font-size: large;
+}
+
+#cartSection {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.productContainer {
+    width: 70%;
+}
+
+#orderSummary-container {
+    margin-left: 3%;
+    width: 30%;
+    height: 20%;
+    transform: translate(0, 22px);
+}
+
+#orderSummary {
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#orderSummaryTitle {
+    text-align: center;
+    margin: 5px 0px;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#totalItems, #subTotal {
+    display: flex;
+    padding: 5%;
+}
+
+#totalItemsTitle, #subTotalTitle {
+    width: 50%;
+}
+
+#totalItemsCount, #subTotalCount {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+}
+
+#checkoutButton-wrapper {
+    margin-top: 5%;
+}
+
+#checkoutButton {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    font-size: large;
+    text-align: center;
+}
+
+#checkoutButton:hover {
+    background-color: #000;
+    -webkit-text-fill-color: white;
+    cursor: pointer;
+}
+
+#productHeader {
+    display: flex;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    align-items: flex-start;
+}
+
+.products, .product {
+    width: 52%;
+}
+
+.productsPrice, .productsQuantity, .productsTotal, .price, .quantity, .total {
+    display: flex;
+    width: 16%;
+}
+
+#productList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.productRow {
+    margin: 10px 0px;
+    width: 100%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+}
+
+.productRow li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.productRow img {
+    width: 104px;
+}
+
+.product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product div{
+    margin: 0% 3%;
+}
+
+.removeButton {
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.removeButton:hover {
+    background-color: #F2EAEA;
+}
+
+.decreaseButton, .increaseButton {
+    background-color: transparent;
+    border-style: none;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+
+.decreaseButton {
+    margin-right: 5%;
+}
+
+.increaseButton {
+    margin-left: 5%;
+}
+
+.quantity span, .quantity button {
+    width: 20%;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+}
+
+.decreaseButton:hover, .increaseButton:hover {
+    background-color: #F2EAEA;
+}

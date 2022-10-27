@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+#login {
+    margin-right: -17%;
+}
+
+#logout {
+    margin-right: -17%;
+    background-color: transparent;
+    font-size: medium;
+    width: fit-content;
+}
+
+#logout:hover {
+    cursor: pointer;
+    background-color: #000;
+    -webkit-text-fill-color: white;
+}
+
+#searchbarWrapper {
+    width: 75%;
+    align-items: center;
+
+}
+
+#searchbarForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+#searchbar {
+    width: 75%;
+    height: 30px;
+    transform: translate(25px, 0);
+    border-width: 3px;
+    border-color: #000;
+    font-size: medium;
+}
+
+#searchButton {
+    background-color: transparent;
+    border-width: 3px;
+    transform: translate(22px, 0);
+}
+
+#searchButton:hover {
+    cursor: pointer;
+}
+
+#searchButton img{
+    height: 27px;
+}
+
+.first-navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.first-navbar nav{
+    display: inline-block;
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.first-navbar nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.first-navbar nav ul li{
+    display: inline-block;
+}
+
+.second-navbar nav{
+    flex: 1;
+    text-align: center;
+}
+
+.second-navbar nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.second-navbar nav ul div {
+    display: inline-block;
+}
+
+.second-navbar nav ul li a {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;   
+}
+
+.second-navbar nav ul li a:hover {
+    background-color: rgb(242, 234, 234);
+}
+
+.selected {
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#PageTitle, #cartTitle {
+    text-align: center;
+}
+
+#MangaListDoc {
+    align-items: center;
+    list-style-type: none;
+}
+
+#MangaListDoc div {
+    display: inline-block;
+    align-items: center;
+    vertical-align: top;
+    border-style: solid;
+    margin: 5px;
+}
+
+#MangaListDoc div li {
+    align-items: center;
+    width: 240px;
+    height: 440px;
+    padding: 30px 35px;
+}
+
+#MangaListDoc div li img {
+    width: 230px;
+}
+
+.addToCartButton {
+    background-color: transparent;
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+}
+
+.addToCartButton:hover {
+    background-color: #000;
+    -webkit-text-fill-color: white;
+    cursor: pointer;
+}
+
+#cartQuantityNumber {
+    font-size: large;
+    margin-left: 5px;
+}
